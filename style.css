@@ -1,0 +1,14 @@
+body {
+  /* display: inline-block;
+  width: 60rem;
+  padding: 2rem 5rem; */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 2rem;
+}

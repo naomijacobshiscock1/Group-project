@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Burger Queen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="/images/burger.jpg" />
+      <h1>Burger Queen</h1>
+    </header>
+
+    <div>
+      <div class="input-group-mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-default"
+          >Name</span
+        >
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+        />
+      </div>
+
+      <select name="Country">
+        <option value="" selected="selected">Select Burger</option>
+        <option value="United States">Double Patty Buger</option>
+        <option value="United Kingdom">Krabby Patty</option>
+        <option value="Afghanistan">Veggie Burger</option>
+        <option value="Albania">Beef Burger</option>
+        <option value="Algeria">Big Mac</option>
+      </select>
+
+      <form action="http://maps.google.com/maps" method="get" target="_blank">
+        <label for="saddr">Enter your location</label>
+        <input type="text" name="saddr" />
+        <input
+          type="hidden"
+          name="daddr"
+          value="2000 Simcoe St N, Oshawa, ON L1G 0C5"
+        />
+        <input type="submit" value="Get directions" />
+
+        <button type="button" class="btn btn-primary">Order here!</button>
+      </form>
+    </div>
+  </body>
+</html>
